@@ -359,7 +359,7 @@ async def admin_view_orders(callback: types.CallbackQuery):
 
 async def main():
     await web_server()
-    print("Прокачаний демо-бот запущено!")
+   print("PRO MAX Bot запущено!")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
