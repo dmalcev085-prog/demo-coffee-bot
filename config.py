@@ -1,4 +1,4 @@
-BOT_TOKEN = "ВСТАВ_СЮДІ_ТОКЕН_БОТА"
+BOT_TOKEN = "8666795532:AAGKsQuB57XiBqS6tHNEVbR63y0jv_clAsY"
 ADMIN_ID = 871664936
 
 COMPANY_NAME = "Aroma Coffee ☕"
