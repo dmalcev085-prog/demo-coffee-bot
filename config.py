@@ -1,4 +1,4 @@
-BOT_TOKEN = "ТВІЙ_ТОКЕН_ВІД_BOTFATHER"
+BOT_TOKEN = "8666795532:AAGKsQuB57XiBqS6tHNEVbR63y0jv_clAsY"
 ADMIN_ID = 871664936  # Твій Telegram ID
 
 COMPANY_NAME = "Aroma Coffee ☕"
