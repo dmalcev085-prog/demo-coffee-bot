@@ -269,14 +269,15 @@ async def get_contact_checkout(message: types.Message, state: FSMContext):
         reply_markup=types.ReplyKeyboardRemove()
     )
 
-    admin_text = (
-        f"🚨 **НОВЕ ЗАМОВЛЕННЯ (КОШИК)!**\n\n"
-        f"🛒 **Товари:** {items_str}\n"
-        f"💰 **Сума:** {total} грн\n"
-        f"👤 **Клієнт:** {user.full_name}\n"
-        f"📞 **Телефон:** `{contact.phone_number}`\n"
-        f"📱 **Telegram:** @{user.username if user.username else 'немає'}"
-    )
+   admin_text = (
+    f"НОВЕ ЗАМОВЛЕННЯ #PRO!\n\n"
+    f"Тип: {delivery_type}\n"
+    f"Адреса: {address}\n"
+    f"Товари: {items_str}\n"
+    f"Сума: {total} грн\n"
+    f"Клієнт: {user.full_name}\n"
+    f"Телефон: {contact.phone_number}"
+)
     await bot.send_message(chat_id=ADMIN_ID, text=admin_text, parse_mode="Markdown")
     await state.clear()
     is_admin = (user.id == ADMIN_ID)
