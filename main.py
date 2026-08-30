@@ -278,7 +278,7 @@ async def get_contact_checkout(message: types.Message, state: FSMContext):
     f"Клієнт: {user.full_name}\n"
     f"Телефон: {contact.phone_number}"
 )
-    await bot.send_message(chat_id=ADMIN_ID, text=admin_text, parse_mode="Markdown")
+    await bot.send_message(chat_id=ADMIN_ID, text=admin_text)
     await state.clear()
     is_admin = (user.id == ADMIN_ID)
     await message.answer("Головне меню:", reply_markup=main_menu(is_admin))
