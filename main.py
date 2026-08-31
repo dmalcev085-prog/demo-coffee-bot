@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # === НАЛАШТУВАННЯ ===
 # Замініть на свій реальний токен або залишіть отримання з системних змінних
-TOKEN = os.getenv("BOT_TOKEN", "ТВІЙ_ТОКЕН_БІЛЯ_BOTFATHER")
+TOKEN = os.getenv("BOT_TOKEN", "8666795532:AAFICKdumXhvFSVm9GVzRNyZ2UJNMMq9EQg")
 # Username вашого каналу (бот має бути адміном у цьому каналі!)
 CHANNEL_ID = "@твій_канал" 
 # Ваше партнерське посилання (наприклад, Binance / Bybit)
